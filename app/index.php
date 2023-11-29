@@ -1,22 +1,25 @@
 <?php
 
-require 'config.php';
-require 'helpers.php';
-require 'Task.php';
+use Framework\App;
+//use framework\Database\Database;
 
-$dbh = connectDB($config);
+//require 'config.php';
 
-$statement = $dbh->prepare('SELECT * FROM tasks;');
+require 'app/helpers.php';
 
-$statement->execute();
+//require 'app/Models/Task.php';
+//
+//require 'framework/Database/Database.php';
 
-$tasks = $statement->fetchAll(PDO::FETCH_OBJ);
+// WHISGFULL PROGRAMMING
+$tasks = App::get('database')->selectAll('tasks');
+
+//$tasks = Database::selectAll('tasks');
 
 $greeting = greet();
 
 
 
-//$greeting = 'Hola ' . $_GET['name'] . ' ' . $_GET['cognom'] . '!';
 
 
 

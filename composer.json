@@ -1,0 +1,20 @@
+{
+    "name": "alumne/repo_php_prova",
+    "description": ".",
+    "type": "project",
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    },
+    "authors": [
+        {
+            "name": "JoelIgle",
+            "email": "joeliglesias@iesebre.com"
+        }
+    ],
+    "require": {
+      "ext-pdo": "*",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
