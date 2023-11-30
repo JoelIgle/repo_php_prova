@@ -1,120 +1,127 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        header {
-            background: beige;
-            padding: 2em;
-            text-align: center;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
+<?php require '../resources/views/layout/html_header.blade.php'; ?>
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #fcfce3;
-        }
-
-        a {
-            text-decoration: none;
-            color: #007bff;
-            margin-right: 10px;
-        }
-
-        select {
-            padding: 5px;
-        }
-
-        #titol {
-            width: 100%;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-
-        }
-
-        #filtre {
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background: #ccc;
-            margin: 30px 0 20px;
-
-        }
-
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
+<?php require '../resources/views/layout/nav.blade.php'; ?>
 
 
-        #contingut {
-            margin: 20px;
-        }
 
-        ul {
-            padding: 8px 0;
-        }
-        .button {
-            display: inline-block;
-            padding: 8px 18px;
-            font-size: 14px;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-            border: 1px solid #007bff; /* Ajusta el color del borde */
-            background-color: #007bff; /* Ajusta el color de fondo */
-            color: #fff; /* Ajusta el color del texto */
-            border-radius: 5px; /* Ajusta la esquina redondeada */
-            transition: background-color 0.3s, color 0.3s; /* Efecto de transición */
-        }
-    </style>
-</head>
-<body>
-<nav>
-    <ul>
-        <li><a href="/tasks">Tasques</a> </li>
-        <li><a href="/users">Users</a> </li>
-        <li><a href="/contact">Contact</a> </li>
-        <li><a href="/about">About</a> </li>
-        <li><a href="/index">Home</a> </li>
-    </ul>
+<div class="min-h-full">
+    <div class="pb-32">
+        <header class="py-10">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold tracking-tight text-black">Contacte</h1>
+            </div>
+        </header>
+    </div>
 
-</nav><a href="/tasks.html"></a>
-<header>
-    todo
-</header>
-<footer>
-    <a href="/IMG_3433.jpeg">Aplicació feta per Joel Iglesias</a>
-</footer>
-</body>
-</html>
+    <main class="-mt-32">
+        <div class="bg-white py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
+                        <div>
+                            <h2 class="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
+                            <p class="mt-4 leading-7 text-gray-600">Quam nunc nunc eu sed. Sed rhoncus quis ultricies ac pellentesque.</p>
+                        </div>
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
+                            <div class="rounded-2xl bg-gray-50 p-10">
+                                <h3 class="text-base font-semibold leading-7 text-gray-900">Collaborate</h3>
+                                <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
+                                    <div>
+                                        <dt class="sr-only">Email</dt>
+                                        <dd><a class="font-semibold text-indigo-600" href="mailto:collaborate@example.com">collaborate@example.com</a></dd>
+                                    </div>
+                                    <div class="mt-1">
+                                        <dt class="sr-only">Phone number</dt>
+                                        <dd>+1 (555) 905-2345</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            <div class="rounded-2xl bg-gray-50 p-10">
+                                <h3 class="text-base font-semibold leading-7 text-gray-900">Press</h3>
+                                <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
+                                    <div>
+                                        <dt class="sr-only">Email</dt>
+                                        <dd><a class="font-semibold text-indigo-600" href="mailto:press@example.com">press@example.com</a></dd>
+                                    </div>
+                                    <div class="mt-1">
+                                        <dt class="sr-only">Phone number</dt>
+                                        <dd>+1 (555) 905-3456</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            <div class="rounded-2xl bg-gray-50 p-10">
+                                <h3 class="text-base font-semibold leading-7 text-gray-900">Join our team</h3>
+                                <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
+                                    <div>
+                                        <dt class="sr-only">Email</dt>
+                                        <dd><a class="font-semibold text-indigo-600" href="mailto:careers@example.com">careers@example.com</a></dd>
+                                    </div>
+                                    <div class="mt-1">
+                                        <dt class="sr-only">Phone number</dt>
+                                        <dd>+1 (555) 905-4567</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            <div class="rounded-2xl bg-gray-50 p-10">
+                                <h3 class="text-base font-semibold leading-7 text-gray-900">Say hello</h3>
+                                <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
+                                    <div>
+                                        <dt class="sr-only">Email</dt>
+                                        <dd><a class="font-semibold text-indigo-600" href="mailto:hello@example.com">hello@example.com</a></dd>
+                                    </div>
+                                    <div class="mt-1">
+                                        <dt class="sr-only">Phone number</dt>
+                                        <dd>+1 (555) 905-5678</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-10 pt-16 lg:grid-cols-3">
+                        <div>
+                            <h2 class="text-3xl font-bold tracking-tight text-gray-900">Locations</h2>
+                            <p class="mt-4 leading-7 text-gray-600">Consequat sunt cillum cillum elit sint. Qui occaecat nisi in ipsum commodo.</p>
+                        </div>
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
+                            <div class="rounded-2xl bg-gray-50 p-10">
+                                <h3 class="text-base font-semibold leading-7 text-gray-900">Los Angeles</h3>
+                                <address class="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
+                                    <p>4556 Brendan Ferry</p>
+                                    <p>Los Angeles, CA 90210</p>
+                                </address>
+                            </div>
+                            <div class="rounded-2xl bg-gray-50 p-10">
+                                <h3 class="text-base font-semibold leading-7 text-gray-900">New York</h3>
+                                <address class="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
+                                    <p>886 Walter Street</p>
+                                    <p>New York, NY 12345</p>
+                                </address>
+                            </div>
+                            <div class="rounded-2xl bg-gray-50 p-10">
+                                <h3 class="text-base font-semibold leading-7 text-gray-900">Toronto</h3>
+                                <address class="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
+                                    <p>7363 Cynthia Pass</p>
+                                    <p>Toronto, ON N3Y 4H8</p>
+                                </address>
+                            </div>
+                            <div class="rounded-2xl bg-gray-50 p-10">
+                                <h3 class="text-base font-semibold leading-7 text-gray-900">Chicago</h3>
+                                <address class="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
+                                    <p>726 Mavis Island</p>
+                                    <p>Chicago, IL 60601</p>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<?php require '../resources/views/layout/footer.blade.php'; ?>
+
+
+
+

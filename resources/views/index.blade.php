@@ -1,139 +1,70 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        header {
-            background: beige;
-            padding: 2em;
-            text-align: center;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
+<?php require '../resources/views/layout/html_header.blade.php'; ?>
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+<?php require '../resources/views/layout/nav.blade.php'; ?>
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
+<div class="min-h-full">
+    <div class="pb-32">
+        <header class="py-10">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold tracking-tight text-black">Tasks</h1>
+            </div>
+        </header>
+    </div>
 
-        th {
-            background-color: #fcfce3;
-        }
-
-        a {
-            text-decoration: none;
-            color: #007bff;
-            margin-right: 10px;
-        }
-
-        select {
-            padding: 5px;
-        }
-
-        #titol {
-            width: 100%;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-
-        }
-
-        #filtre {
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background: #ccc;
-            margin: 30px 0 20px;
-
-        }
-
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
+    <main class="-mt-32">
+<!-- TAULA -->
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="sm:flex sm:items-center">
+                <div class="sm:flex-auto">
+                    <h1 class="text-base font-semibold leading-6 text-gray-900">Users</h1>
+                    <p class="mt-2 text-sm text-gray-700">A list of all the users in your account including their name, title, email and role.</p>
+                </div>
+                <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
+                    <button type="button" class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Add user</button>
+                </div>
+            </div>
+            <div class="mt-8 flow-root">
+                <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+                        <table class="min-w-full divide-y divide-gray-300">
+                            <thead>
+                            <tr>
+                                <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">Id</th>
+                                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Title</th>
+                                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Description</th>
+                                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Completed</th>
+                                <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-0">
+                                    <span class="sr-only">Edit</span>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                            <?php foreach ($tasks as $task): ?>
 
 
-        #contingut {
-            margin: 20px;
-        }
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0"><?=$task->id;?></td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?=$task->title;?></td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?=$task->description;?></td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?=$task->completed;?></td>
+                                <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
+                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Lindsay Walton</span></a>
+                                </td>
+                            </tr>
 
-        ul {
-            padding: 8px 0;
-        }
-        .button {
-            display: inline-block;
-            padding: 8px 18px;
-            font-size: 14px;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-            border: 1px solid #007bff; /* Ajusta el color del borde */
-            background-color: #007bff; /* Ajusta el color de fondo */
-            color: #fff; /* Ajusta el color del texto */
-            border-radius: 5px; /* Ajusta la esquina redondeada */
-            transition: background-color 0.3s, color 0.3s; /* Efecto de transición */
-        }
-    </style>
-</head>
-<body>
-<nav>
-    <ul>
-        <li><a href="/tasks">Tasques</a> </li>
-        <li><a href="/users">Users</a> </li>
-        <li><a href="/contact">Contact</a> </li>
-        <li><a href="/about">About</a> </li>
-        <li><a href="/index">Home</a> </li>
-    </ul>
+                            <?php endforeach; ?>
 
-</nav><a href="/tasks.html"></a>
-<header>
+                            <!-- More people... -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- FI TAULA -->
+    </main>
+</div>
 
-    <h1><?=$greeting;?></h1>
 
-    <table>
-        <tr>
-            <th>Id</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Completed</th>
-        </tr>
-
-     <?php foreach ($tasks as $task): ?>
-        <tr>
-            <td><?=$task->id;?></td>
-            <td><?=$task->title;?></td>
-            <td><?=$task->description;?></td>
-            <td><?=$task->completed;?></td>
-        </tr>
-     <?php endforeach; ?>
-    </table>
-</header>
-<footer>
-    <a href="/IMG_3433.jpeg">Aplicació feta per Joel Iglesias</a>
-</footer>
 </body>
 </html>
