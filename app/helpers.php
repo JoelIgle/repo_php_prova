@@ -5,7 +5,7 @@ function greet() {
     $surname = $_GET['surname'];
 
 
-    return "Alejandri $name $surname!";
+    return "Hola $name $surname!";
 }
 
 //function dd($xivato) {

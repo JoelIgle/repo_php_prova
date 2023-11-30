@@ -111,26 +111,7 @@
 
 </nav><a href="/tasks.html"></a>
 <header>
-
-    <h1><?=$greeting;?></h1>
-
-    <table>
-        <tr>
-            <th>Id</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Completed</th>
-        </tr>
-
-     <?php foreach ($tasks as $task): ?>
-        <tr>
-            <td><?=$task->id;?></td>
-            <td><?=$task->title;?></td>
-            <td><?=$task->description;?></td>
-            <td><?=$task->completed;?></td>
-        </tr>
-     <?php endforeach; ?>
-    </table>
+    todo
 </header>
 <footer>
     <a href="/IMG_3433.jpeg">Aplicació feta per Joel Iglesias</a>
