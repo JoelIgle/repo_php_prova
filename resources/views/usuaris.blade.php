@@ -2,7 +2,7 @@
 
 <?php require '../resources/views/layout/nav.blade.php'; ?>
 
-<div class="min-h-full">
+<div class="min-h-full bg-white">
     <div class="pb-32">
         <header class="py-10">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -64,6 +64,4 @@
     </main>
 </div>
 
-
-</body>
-</html>
+<?php require '../resources/views/layout/footer.blade.php'; ?>

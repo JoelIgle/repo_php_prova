@@ -1,7 +1,7 @@
 <?php
 
 return [
-    // mapeig url
+    // Aquí poso les rutes
     '/' => '../app/Http/Controllers/index.php',
     '/index.php' => '../app/Http/Controllers/index.php',
     '/index' => '../app/Http/Controllers/index.php',

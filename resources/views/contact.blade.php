@@ -3,14 +3,9 @@
 <?php require '../resources/views/layout/nav.blade.php'; ?>
 
 
-
-<div class="min-h-full">
+<div class="min-h-full bg-white">
     <div class="pb-32">
-        <header class="py-10">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h1 class="text-3xl font-bold tracking-tight text-black">Contacte</h1>
-            </div>
-        </header>
+
     </div>
 
     <main class="-mt-32">
@@ -19,16 +14,18 @@
                 <div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
                     <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
                         <div>
-                            <h2 class="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
-                            <p class="mt-4 leading-7 text-gray-600">Quam nunc nunc eu sed. Sed rhoncus quis ultricies ac pellentesque.</p>
+                            <h2 class="text-3xl font-bold tracking-tight text-gray-900">Contacta amb nosaltres</h2>
+                            <p class="mt-4 leading-7 text-gray-600">Aquí tens la nostra informació per a
+                                contactar-nos.</p>
                         </div>
                         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
                             <div class="rounded-2xl bg-gray-50 p-10">
-                                <h3 class="text-base font-semibold leading-7 text-gray-900">Collaborate</h3>
+                                <h3 class="text-base font-semibold leading-7 text-gray-900">Col·labora</h3>
                                 <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
                                     <div>
                                         <dt class="sr-only">Email</dt>
-                                        <dd><a class="font-semibold text-indigo-600" href="mailto:collaborate@example.com">collaborate@example.com</a></dd>
+                                        <dd><a class="font-semibold text-indigo-600"
+                                               href="mailto:collaborate@iesebre.com">collaborate@iesebre.com</a></dd>
                                     </div>
                                     <div class="mt-1">
                                         <dt class="sr-only">Phone number</dt>
@@ -37,11 +34,12 @@
                                 </dl>
                             </div>
                             <div class="rounded-2xl bg-gray-50 p-10">
-                                <h3 class="text-base font-semibold leading-7 text-gray-900">Press</h3>
+                                <h3 class="text-base font-semibold leading-7 text-gray-900">Prensa</h3>
                                 <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
                                     <div>
                                         <dt class="sr-only">Email</dt>
-                                        <dd><a class="font-semibold text-indigo-600" href="mailto:press@example.com">press@example.com</a></dd>
+                                        <dd><a class="font-semibold text-indigo-600" href="mailto:press@iesebre.com">press@iesebre.com</a>
+                                        </dd>
                                     </div>
                                     <div class="mt-1">
                                         <dt class="sr-only">Phone number</dt>
@@ -50,11 +48,12 @@
                                 </dl>
                             </div>
                             <div class="rounded-2xl bg-gray-50 p-10">
-                                <h3 class="text-base font-semibold leading-7 text-gray-900">Join our team</h3>
+                                <h3 class="text-base font-semibold leading-7 text-gray-900">Uneix'te a nosaltres</h3>
                                 <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
                                     <div>
                                         <dt class="sr-only">Email</dt>
-                                        <dd><a class="font-semibold text-indigo-600" href="mailto:careers@example.com">careers@example.com</a></dd>
+                                        <dd><a class="font-semibold text-indigo-600" href="mailto:careers@iesebre.com">careers@iesebre.com</a>
+                                        </dd>
                                     </div>
                                     <div class="mt-1">
                                         <dt class="sr-only">Phone number</dt>
@@ -63,11 +62,12 @@
                                 </dl>
                             </div>
                             <div class="rounded-2xl bg-gray-50 p-10">
-                                <h3 class="text-base font-semibold leading-7 text-gray-900">Say hello</h3>
+                                <h3 class="text-base font-semibold leading-7 text-gray-900">Digues hola</h3>
                                 <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
                                     <div>
                                         <dt class="sr-only">Email</dt>
-                                        <dd><a class="font-semibold text-indigo-600" href="mailto:hello@example.com">hello@example.com</a></dd>
+                                        <dd><a class="font-semibold text-indigo-600" href="mailto:hello@iesebre.com">hello@iesebre.com</a>
+                                        </dd>
                                     </div>
                                     <div class="mt-1">
                                         <dt class="sr-only">Phone number</dt>
@@ -79,8 +79,8 @@
                     </div>
                     <div class="grid grid-cols-1 gap-x-8 gap-y-10 pt-16 lg:grid-cols-3">
                         <div>
-                            <h2 class="text-3xl font-bold tracking-tight text-gray-900">Locations</h2>
-                            <p class="mt-4 leading-7 text-gray-600">Consequat sunt cillum cillum elit sint. Qui occaecat nisi in ipsum commodo.</p>
+                            <h2 class="text-3xl font-bold tracking-tight text-gray-900">Localitzacions</h2>
+                            <p class="mt-4 leading-7 text-gray-600">Ens pots trobar a aquestes localitzacions.</p>
                         </div>
                         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
                             <div class="rounded-2xl bg-gray-50 p-10">
